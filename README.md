@@ -1,0 +1,3 @@
+#Algorithm in Objective-C and Swift
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;使用Objective-C和Swift讲解数据结构的想法来源于网上的其他项目，同时也可以用来加深对之前学习的内容的理解（主要还是数据结构太重要，再不练就怕忘完了。。。）。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当然，欢迎大家fork&star，如果有问题的话也可以[点我](https://github.com/terrynie/Algorithm-in-Objective-C-and-Swift/issues)提交Issues，如果想贡献自己的力量的话，也欢迎大家联系我[Email:88@terrynie.com](mailto:88@terrynie.com)或者直接Pull Request。
