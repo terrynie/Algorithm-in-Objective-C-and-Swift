@@ -11,6 +11,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSString *test = @"Hello World!";
+        NSLog(@"%lu",(unsigned long)test.length);
     }
     return 0;
 }
