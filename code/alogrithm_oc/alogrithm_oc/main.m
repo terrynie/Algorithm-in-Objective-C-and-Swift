@@ -21,8 +21,20 @@ int main(int argc, const char * argv[]) {
         if ([test isEqualToString:second]) {
             NSLog(@"%@ is equal to %@",test,second);
         }
-        [test bo ]
+        NSString *subStr1 = [test substringFromIndex:3]; //"lo World! 5"
+        NSString *subStr2 = [test substringToIndex:5];   //"Hello"
+        NSString *subStr3 = [test substringWithRange:NSMakeRange(1, 5)];  //"ello "
+        char c = [test characterAtIndex:2]; //'l'
+//        NSInteger index = [test ]
         
+        
+        
+        
+        NSLog(@"%@;%@;%@;%c",subStr1,subStr2,subStr3,c);
+        
+        char d[20] = "abcdefghijklmn";
+        test = [test initWithCharactersNoCopy:d length:5 freeWhenDone:true];
+        NSLog(@"%@",test);
         
     }
     return 0;
