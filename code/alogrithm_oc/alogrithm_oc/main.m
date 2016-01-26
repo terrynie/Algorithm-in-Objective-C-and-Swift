@@ -25,16 +25,23 @@ int main(int argc, const char * argv[]) {
         NSString *subStr2 = [test substringToIndex:5];   //"Hello"
         NSString *subStr3 = [test substringWithRange:NSMakeRange(1, 5)];  //"ello "
         char c = [test characterAtIndex:2]; //'l'
-//        NSInteger index = [test ]
+        
+        NSMutableString *mutableStr = [NSMutableString stringWithString:@"Hello Objective-C"]; //"Hello Objective-C"
+        [mutableStr insertString:@"World! " atIndex:6];   //"Hello World! Objective-C"
+        [mutableStr appendFormat:@" %d",5];   //"Hello World! Objective-C 5"
+        [mutableStr setString:@"Hello World! Objective-C"];  //"Hello World! Objective-C"
+        [mutableStr appendString:@" is awesome!"]; //"Hello World! Objective-C is awesome!"
+        [mutableStr deleteCharactersInRange:NSMakeRange(12, 24)]; //"Hello World!"
+        [mutableStr replaceCharactersInRange:NSMakeRange(6, 6) withString:@"Objective-C!"]; //"Hello Objective-C!"
         
         
         
+        
+        NSLog(@"%@",mutableStr);
+ 
         
         NSLog(@"%@;%@;%@;%c",subStr1,subStr2,subStr3,c);
         
-        char d[20] = "abcdefghijklmn";
-        test = [test initWithCharactersNoCopy:d length:5 freeWhenDone:true];
-        NSLog(@"%@",test);
         
     }
     return 0;
