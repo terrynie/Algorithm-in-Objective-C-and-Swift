@@ -25,3 +25,10 @@
 }
 @end
 ```
+###Swift
+```
+class LinkNode<T>: NSObject {
+    var value: T?
+    var next: LinkNode?
+}
+```
