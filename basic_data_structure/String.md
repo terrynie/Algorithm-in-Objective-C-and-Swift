@@ -3,7 +3,7 @@
 ```
 NSString *s1 = @""; //创建一个空字符串
 NSString *test = @"Hello World!";
-testLen = test.length; //字符串test的长度，也可以使用[test length]
+testLen = [test length]; //字符串test的长度
 NSLog(@"%lu",(unsigned long)testLen);
 NSString *subStr1 = [test substringFromIndex:3]; //@"lo World!"
 NSString *subStr2 = [test substringToIndex:5];   //@"Hello"
