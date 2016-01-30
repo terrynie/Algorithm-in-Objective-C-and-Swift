@@ -10,19 +10,29 @@
 #代码实现
 ###Objective-C
 ```
-@interface LinkNode:NSObject
+@interface LinkNode: NSObject
 {
     NSInteger _value;
     LinkNode *_next;
 }
+@property NSInteger _value;
+@property LinkNode *_next;
+
 - (void)initWithValue: (NSInteger)val;
 @end
 
+#import "LinkList.h"
+
 @implementation LinkNode
+
+@synthesize _next;
+@synthesize _value;
+
 - (void)initWithValue:(NSInteger)val {
     _value = val;
     _next = nil;
 }
+
 @end
 ```
 ###Swift
@@ -31,4 +41,48 @@ class LinkNode<T>: NSObject {
     var value: T?
     var next: LinkNode?
 }
+```
+#链表的基本操作
+##反转链表
+###单项链表
+###Objective-C
+```
+@interface LinkNode: NSObject
+{
+    NSInteger _value;
+    LinkNode *_next;
+}
+@property NSInteger _value;
+@property LinkNode *_next;
+
+- (void)initWithValue: (NSInteger)val;
+@end
+
+#import "LinkList.h"
+
+@implementation LinkNode
+
+@synthesize _next;
+@synthesize _value;
+
+- (void)initWithValue:(NSInteger)val {
+    _value = val;
+    _next = nil;
+}
+
+@end
+
+LinkNode* reverse(LinkNode *head) {
+    LinkNode *prev = NULL;
+    while (head != NULL) {
+        LinkNode *next = [head _next];
+        [head set_next:prev];
+        prev = head;
+        head = next;
+    }
+    return prev;
+}
+```
+###Swift
+```
 ```

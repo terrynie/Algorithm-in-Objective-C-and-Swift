@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DE4883181C57A21700621393 /* LinkedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4883171C57A21700621393 /* LinkedNode.m */; };
-		DE48831A1C57AB7C00621393 /* LinkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE4883191C57AB7C00621393 /* LinkList.swift */; };
+		DE0D0DC51C5CF8130093B11F /* LinkList.m in Sources */ = {isa = PBXBuildFile; fileRef = DE0D0DC41C5CF8130093B11F /* LinkList.m */; };
 		DE9953461C4FD22C003CA88B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9953451C4FD22C003CA88B /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -25,9 +24,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		DE0D0DC31C5CF8130093B11F /* LinkList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkList.h; sourceTree = "<group>"; };
+		DE0D0DC41C5CF8130093B11F /* LinkList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkList.m; sourceTree = "<group>"; };
 		DE2B6C091C574C1700A11493 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
-		DE4883171C57A21700621393 /* LinkedNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedNode.m; sourceTree = "<group>"; };
-		DE4883191C57AB7C00621393 /* LinkList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkList.swift; sourceTree = "<group>"; };
 		DE9953421C4FD22C003CA88B /* alogrithm_oc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = alogrithm_oc; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE9953451C4FD22C003CA88B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -46,8 +45,8 @@
 		DE4883161C57A1DB00621393 /* Basic_Datastructure */ = {
 			isa = PBXGroup;
 			children = (
-				DE4883171C57A21700621393 /* LinkedNode.m */,
-				DE4883191C57AB7C00621393 /* LinkList.swift */,
+				DE0D0DC31C5CF8130093B11F /* LinkList.h */,
+				DE0D0DC41C5CF8130093B11F /* LinkList.m */,
 			);
 			name = Basic_Datastructure;
 			sourceTree = "<group>";
@@ -134,8 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE4883181C57A21700621393 /* LinkedNode.m in Sources */,
-				DE48831A1C57AB7C00621393 /* LinkList.swift in Sources */,
+				DE0D0DC51C5CF8130093B11F /* LinkList.m in Sources */,
 				DE9953461C4FD22C003CA88B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
